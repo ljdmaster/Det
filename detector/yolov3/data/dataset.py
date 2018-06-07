@@ -42,7 +42,7 @@ def convert_all_annotation(data_dir, ratio):
 
     classes = read_classes(classes_file)
     
-    with open("image_label.txt",'w') as list_file:
+    with open("annotations.txt",'w') as list_file:
         for image_id in image_ids[:int(image_num*ratio)]:
             list_file.write(image_dir+"/"+image_id+".jpg")
             convert_annotation(anno_dir+'/'+image_id+".xml", classes, list_file)

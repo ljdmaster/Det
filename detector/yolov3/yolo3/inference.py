@@ -15,19 +15,17 @@ from keras.models import load_model
 from keras.layers import Input
 from PIL import Image, ImageFont, ImageDraw
 
-from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 
 class Infer(object):
-    def __init__(self, model_path, anchors_path, classes_path):
-        #self.model_path = 'model/yolov3.h5' # model path or trained weights path
+    def __init__(self, yolo, model_path, anchors_path, classes_path):
+        self.yolo = yolo
         self.model_path = model_path
         self.anchors_path = anchors_path
         self.classes_path = classes_path
         self.score = 0.3
         self.iou = 0.5
         self.class_names = self._get_class()
-        print(self.class_names)
         self.anchors = self._get_anchors()
         self.sess = K.get_session()
         self.model_image_size = (416, 416) # fixed size or (None, None), hw
@@ -58,13 +56,16 @@ class Infer(object):
         try:
             self.yolo_model = load_model(model_path, compile=False)
         except:
-            self.yolo_model = tiny_yolo_body(Input(shape=(None,None,3)), num_anchors//2, num_classes) \
-                if is_tiny_version else yolo_body(Input(shape=(None,None,3)), num_anchors//3, num_classes)
+            self.yolo_model = self.yolo.yolo_body(Input(shape=(None,None,3)), num_anchors//2, num_classes) 
             self.yolo_model.load_weights(self.model_path) # make sure model, anchors and classes match
         else:
+            print("anchors:", num_anchors)
+            print("num_classes", num_classes)
+            print(self.yolo_model.output)
+            print(self.yolo_model.layers[-1].output_shape)
             assert self.yolo_model.layers[-1].output_shape[-1] == \
-                num_anchors/len(self.yolo_model.output) * (num_classes + 5), \
-                'Mismatch between model and given anchor and class sizes'
+                   num_anchors/len(self.yolo_model.output) * (num_classes + 5), \
+                   'Mismatch between model and given anchor and class sizes'
 
         print('{} model, anchors, and classes loaded.'.format(model_path))
 
@@ -81,7 +82,7 @@ class Infer(object):
 
         # Generate output tensor targets for filtered bounding boxes.
         self.input_image_shape = K.placeholder(shape=(2, ))
-        boxes, scores, classes = yolo_eval(self.yolo_model.output, self.anchors,
+        boxes, scores, classes = self.yolo.yolo_eval(self.yolo_model.output, self.anchors,
                 len(self.class_names), self.input_image_shape,
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
@@ -142,14 +143,14 @@ class Infer(object):
             for i in range(thickness):
                 draw.rectangle(
                     [left + i, top + i, right - i, bottom - i],
-                    #outline=self.colors[c])
-                    outline=None)
+                    outline=self.colors[c])
+                    #outline=None)
             draw.rectangle(
                 [tuple(text_origin), tuple(text_origin + label_size)],
-                #fill=self.colors[c])
-                fill=None)
+                fill=self.colors[c])
+                #fill=None)
 
-            #draw.text(text_origin, label, fill=(0, 0, 0), font=font)
+            draw.text(text_origin, label, fill=(0, 0, 0), font=font)
             del draw
 
         end = timer()
@@ -159,65 +160,46 @@ class Infer(object):
     def close_session(self):
         self.sess.close()
 
-
-
-
-
-def detect_video(yolo, video_path, output_path=""):
-    import cv2
-    vid = cv2.VideoCapture(video_path)
-    if not vid.isOpened():
-        raise IOError("Couldn't open webcam or video")
-    video_FourCC    = int(vid.get(cv2.CAP_PROP_FOURCC))
-    video_fps       = vid.get(cv2.CAP_PROP_FPS)
-    video_size      = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
+    def detect_video(self, video_path, output_path=""):
+        import cv2
+        vid = cv2.VideoCapture(video_path)
+        if not vid.isOpened():
+            raise IOError("Couldn't open webcam or video")
+        video_FourCC    = int(vid.get(cv2.CAP_PROP_FOURCC))
+        video_fps       = vid.get(cv2.CAP_PROP_FPS)
+        video_size      = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
                         int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-    isOutput = True if output_path != "" else False
-    if isOutput:
-        print("!!! TYPE:", type(output_path), type(video_FourCC), type(video_fps), type(video_size))
-        out = cv2.VideoWriter(output_path, video_FourCC, video_fps, video_size)
-    accum_time = 0
-    curr_fps = 0
-    fps = "FPS: ??"
-    prev_time = timer()
-    while True:
-        return_value, frame = vid.read()
-        image = Image.fromarray(frame)
-        image = yolo.detect_image(image)
-        result = np.asarray(image)
-        curr_time = timer()
-        exec_time = curr_time - prev_time
-        prev_time = curr_time
-        accum_time = accum_time + exec_time
-        curr_fps = curr_fps + 1
-        if accum_time > 1:
-            accum_time = accum_time - 1
-            fps = "FPS: " + str(curr_fps)
-            curr_fps = 0
-        cv2.putText(result, text=fps, org=(3, 15), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
-                    fontScale=0.50, color=(255, 0, 0), thickness=2)
-        cv2.namedWindow("result", cv2.WINDOW_NORMAL)
-        cv2.imshow("result", result)
+        isOutput = True if output_path != "" else False
         if isOutput:
-            out.write(result)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-    yolo.close_session()
+            print("!!! TYPE:", type(output_path), type(video_FourCC), type(video_fps), type(video_size))
+            out = cv2.VideoWriter(output_path, video_FourCC, video_fps, video_size)
+        accum_time = 0
+        curr_fps = 0
+        fps = "FPS: ??"
+        prev_time = timer()
+        while True:
+            return_value, frame = vid.read()
+            image = Image.fromarray(frame)
+            image = self.detect_image(image)
+            result = np.asarray(image)
+            curr_time = timer()
+            exec_time = curr_time - prev_time
+            prev_time = curr_time
+            accum_time = accum_time + exec_time
+            curr_fps = curr_fps + 1
+            if accum_time > 1:
+                accum_time = accum_time - 1
+                fps = "FPS: " + str(curr_fps)
+                curr_fps = 0
+            cv2.putText(result, text=fps, org=(3, 15), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
+                    fontScale=0.50, color=(255, 0, 0), thickness=2)
+            cv2.namedWindow("result", cv2.WINDOW_NORMAL)
+            cv2.imshow("result", result)
+            if isOutput:
+                out.write(result)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        self.close_session()
 
 
 
-
-def detect_img(yolo):
-    #img = input('Input image filename:')
-    img = './FaceinCar2/JPEGImages/78.jpg'
-    image = Image.open(img)
-    r_image = yolo.detect_image(image)
-    r_image.show()
-    yolo.close_session()
-
-
-
-
-
-if __name__ == '__main__':
-    detect_img(YOLO())

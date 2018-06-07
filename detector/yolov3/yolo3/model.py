@@ -142,7 +142,9 @@ class Base(object):
         if calc_loss == True:
             return grid, feats, box_xy, box_wh
         return box_xy, box_wh, box_confidence, box_class_probs
-
+    
+    def yolo_body(self):
+        pass
 
     def yolo_loss(self, args, anchors, num_classes, ignore_thresh=.5, print_loss=False):
         '''Return yolo_loss tensor
@@ -329,12 +331,9 @@ class Base(object):
         return boxes_, scores_, classes_
 
 
-
-
 class Yolo(Base):
     def __init__(self):
         super(Yolo, self).__init__()
-
 
     def yolo_body(self, inputs, num_anchors, num_classes):
         """Create YOLO_V3 model CNN body in Keras."""
@@ -353,13 +352,9 @@ class Yolo(Base):
  
 
 
-
-
 class YoloTiny(Base):
     def __init__(self):
         super(YoloTiny, self).__init__()
-
-
 
     def yolo_body(self, inputs, num_anchors, num_classes):
         '''Create Tiny YOLO_v3 model CNN body in keras.'''

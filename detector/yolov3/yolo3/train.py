@@ -13,20 +13,30 @@ from yolo3.utils import get_random_data
 
 
 class Train(object):
-    def __init__(self, yolo, annotation_path,log_dir,classes_path,anchors_path, weights_path):
+    def __init__(self, yolo, 
+                       annotation_path,
+                       classes_path,
+                       anchors_path,
+                       weights_path,
+                       log_dir='./yolo3/logs'):
         self.annotation_path = annotation_path
-        self.log_dir = log_dir
         self.classes_path = classes_path
         self.anchors_path = anchors_path
         self.weights_path = weights_path
+        self.log_dir = log_dir
 
-        self.class_names = self.get_classes(self.classes_path)
+        self.class_names = self.get_classes()
         self.num_classes = len(self.class_names)
-        self.anchors = self.get_anchors(self.anchors_path)
+        self.anchors = self.get_anchors()
+        self.annotations = self.get_annotations()
+        
         self.input_shape = (416,416) # multiple of 32, hw
         self.batch_size = 32
+        self.val_split = 0.1
+        self.um_val = int(len(lines)*self.val_split)
+        self.num_train = len(lines) - num_val
+        print('Train on {} samples, val on {} samples, with batch size {}.'.format(self.num_train, self.num_val, self.batch_size))
 
-    
         self.model = yolo.create_model(self.input_shape,
                                         self.class_names,
                                         self.anchors,
@@ -34,21 +44,25 @@ class Train(object):
                                         load_pretrained=True,
                                         freeze_body=True)
    
-
-    def get_classes(self, classes_path):
+    def get_classes(self):
         '''loads the classes'''
-        with open(classes_path) as f:
+        with open(self.classes_path) as f:
             class_names = f.readlines()
         class_names = [c.strip() for c in class_names]
         return class_names
 
-    def get_anchors(self,anchors_path):
+    def get_anchors(self):
         '''loads the anchors from a file'''
-        with open(anchors_path) as f:
+        with open(self.anchors_path) as f:
             anchors = f.readline()
         anchors = [float(x) for x in anchors.split(',')]
         return np.array(anchors).reshape(-1, 2)
 
+    def get_annotations(self):
+        with open(self.annotation_path) as f:
+            lines = f.readlines()
+        np.random.shuffle(lines)
+        return lines
 
     def preprocess_true_boxes(self,true_boxes, input_shape, anchors, num_classes):
         '''Preprocess true boxes to training input format
@@ -157,7 +171,7 @@ class Train(object):
                                      monitor='val_loss', 
                                      save_weights_only=True,
                                      save_best_only=True,
-                                     period=1)
+                                     period=100)
 
         early_stopping = EarlyStopping(monitor='val_loss',
                                        min_delta=0, 
@@ -165,24 +179,16 @@ class Train(object):
                                        verbose=1, 
                                        mode='auto')
 
-        batch_size = self.batch_size
-        val_split = 0.1
-        with open(self.annotation_path) as f:
-            lines = f.readlines()
-        np.random.shuffle(lines)
-        num_val = int(len(lines)*val_split)
-        num_train = len(lines) - num_val
-        print('Train on {} samples, val on {} samples, with batch size {}.'.format(num_train, num_val, batch_size))
 
-        self.model.fit_generator(self.data_generator_wrap(lines[:num_train]),
-                                 steps_per_epoch=max(1, num_train//batch_size),
-                                 validation_data=self.data_generator_wrap(lines[num_train:]),
-                                 validation_steps=max(1, num_val//batch_size),
+        self.model.fit_generator(self.data_generator_wrap(self.annotations[:self.num_train]),
+                                 steps_per_epoch=max(1, self.num_train//self.batch_size),
+                                 validation_data=self.data_generator_wrap(self,annotations[self.num_train:]),
+                                 validation_steps=max(1, self.num_val//self.batch_size),
                                  epochs=30,
                                  initial_epoch=0,
                                  callbacks=[logging, checkpoint, early_stopping])
 
-        self.model.save_weights(self.log_dir + 'trained_weights.h5')
+        self.model.save_weights(self.log_dir + 'yolo_weights.h5')
 
 
 
