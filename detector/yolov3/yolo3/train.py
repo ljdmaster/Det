@@ -6,6 +6,7 @@ import numpy as np
 import keras.backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
+from keras.optimizers import Adam
 from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 
 from yolo3.utils import get_random_data
@@ -31,10 +32,10 @@ class Train(object):
         self.annotations = self.get_annotations()
         
         self.input_shape = (416,416) # multiple of 32, hw
-        self.batch_size = 32
+        self.batch_size = 16
         self.val_split = 0.1
-        self.um_val = int(len(lines)*self.val_split)
-        self.num_train = len(lines) - num_val
+        self.num_val = int(len(self.annotations)*self.val_split)
+        self.num_train = len(self.annotations) - self.num_val
         print('Train on {} samples, val on {} samples, with batch size {}.'.format(self.num_train, self.num_val, self.batch_size))
 
         self.model = yolo.create_model(self.input_shape,
@@ -163,7 +164,9 @@ class Train(object):
     
     def train(self):
         """retrain/fine-tune the model"""
-        self.model.compile(optimizer='adam',loss={'yolo_loss': lambda y_true, y_pred: y_pred})
+
+        adam = Adam(lr=0.001)
+        self.model.compile(optimizer=adam,loss={'yolo_loss': lambda y_true, y_pred: y_pred})
 
         logging = TensorBoard(log_dir=self.log_dir)
 
@@ -171,7 +174,7 @@ class Train(object):
                                      monitor='val_loss', 
                                      save_weights_only=True,
                                      save_best_only=True,
-                                     period=100)
+                                     period=500)
 
         early_stopping = EarlyStopping(monitor='val_loss',
                                        min_delta=0, 
@@ -182,11 +185,11 @@ class Train(object):
 
         self.model.fit_generator(self.data_generator_wrap(self.annotations[:self.num_train]),
                                  steps_per_epoch=max(1, self.num_train//self.batch_size),
-                                 validation_data=self.data_generator_wrap(self,annotations[self.num_train:]),
+                                 validation_data=self.data_generator_wrap(self.annotations[self.num_train:]),
                                  validation_steps=max(1, self.num_val//self.batch_size),
-                                 epochs=30,
+                                 epochs=1000,
                                  initial_epoch=0,
-                                 callbacks=[logging, checkpoint, early_stopping])
+                                 callbacks=[logging, checkpoint])
 
         self.model.save_weights(self.log_dir + 'yolo_weights.h5')
 

@@ -59,10 +59,6 @@ class Infer(object):
             self.yolo_model = self.yolo.yolo_body(Input(shape=(None,None,3)), num_anchors//2, num_classes) 
             self.yolo_model.load_weights(self.model_path) # make sure model, anchors and classes match
         else:
-            print("anchors:", num_anchors)
-            print("num_classes", num_classes)
-            print(self.yolo_model.output)
-            print(self.yolo_model.layers[-1].output_shape)
             assert self.yolo_model.layers[-1].output_shape[-1] == \
                    num_anchors/len(self.yolo_model.output) * (num_classes + 5), \
                    'Mismatch between model and given anchor and class sizes'
@@ -76,6 +72,7 @@ class Infer(object):
         self.colors = list(
             map(lambda x: (int(x[0] * 255), int(x[1] * 255), int(x[2] * 255)),
                 self.colors))
+        
         random.seed(10101)  # Fixed seed for consistent colors across runs.
         random.shuffle(self.colors)  # Shuffle colors to decorrelate adjacent classes.
         random.seed(None)  # Reset seed to default.
@@ -114,7 +111,7 @@ class Infer(object):
 
         print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
 
-        font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
+        font = ImageFont.truetype(font='./common/font/FiraMono-Medium.otf',
                     size=np.floor(3e-2 * image.size[1] + 0.5).astype('int32'))
         thickness = (image.size[0] + image.size[1]) // 300
 
@@ -140,17 +137,16 @@ class Infer(object):
                 text_origin = np.array([left, top + 1])
 
             # My kingdom for a good redistributable image drawing library.
+            if np.asarray(image).ndim==3:
+                outline = self.colors[c]
+                fill = (0,0,0)
+            elif np.asarray(image).ndim==2:
+                outline = 128
+                fill = 0
             for i in range(thickness):
-                draw.rectangle(
-                    [left + i, top + i, right - i, bottom - i],
-                    outline=self.colors[c])
-                    #outline=None)
-            draw.rectangle(
-                [tuple(text_origin), tuple(text_origin + label_size)],
-                fill=self.colors[c])
-                #fill=None)
-
-            draw.text(text_origin, label, fill=(0, 0, 0), font=font)
+                draw.rectangle([left + i, top + i, right - i, bottom - i],outline=outline)
+            draw.rectangle([tuple(text_origin), tuple(text_origin +label_size)],fill=outline)
+            draw.text(text_origin, label, fill=fill, font=font)
             del draw
 
         end = timer()

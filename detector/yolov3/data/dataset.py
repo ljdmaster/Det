@@ -31,7 +31,7 @@ def convert_annotation(in_file, classes, list_file):
         list_file.write(" " + ",".join([str(a) for a in b]) + ',' + str(cls_id))
 
 
-def convert_all_annotation(data_dir, ratio):
+def convert_all_annotation(data_dir, output_dir, ratio):
     data_dir = os.path.abspath(data_dir)
     anno_dir = os.path.join(data_dir, "Annotations")
     image_dir = os.path.join(data_dir, "JPEGImages")
@@ -42,25 +42,27 @@ def convert_all_annotation(data_dir, ratio):
 
     classes = read_classes(classes_file)
     
-    with open("annotations.txt",'w') as list_file:
+    with open(os.path.join(output_dir, "annotations.txt"),'w') as list_file:
         for image_id in image_ids[:int(image_num*ratio)]:
             list_file.write(image_dir+"/"+image_id+".jpg")
             convert_annotation(anno_dir+'/'+image_id+".xml", classes, list_file)
             list_file.write('\n')
     list_file.close()
     
-    with open("test_image.txt", 'w') as test_image:
+    with open(os.path.join(output_dir, "test_image.txt"), 'w') as test_image:
         for image_id in image_ids[int(image_num*ratio):]:
             test_image.write(image_dir+"/"+image_id+".jpg")
             test_image.write('\n')
     test_image.close()
 
-    shutil.copyfile(classes_file, "classes.txt")
+    shutil.copyfile(classes_file, os.path.join(output_dir, "classes.txt"))
     
     
 
 if __name__=="__main__":
     #data_dir = "../VOC2012"
     data_dir = "../FaceinCar2"
-    convert_all_annotation(data_dir, 0.997)
+    output_dir = './faceincar2'
+
+    convert_all_annotation(data_dir, output_dir, 0.997)
 

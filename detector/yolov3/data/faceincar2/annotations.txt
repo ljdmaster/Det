@@ -1,186 +1,186 @@
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/179.jpg 344,295,403,377,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/276.jpg 89,130,221,377,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/151.jpg 266,313,328,411,0 228,328,270,406,0 421,313,475,394,0 468,322,524,393,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/53.jpg 327,259,398,351,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/157.jpg 84,99,219,332,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/36.jpg 405,199,542,385,0 544,167,685,390,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/47.jpg 525,362,605,487,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/176.jpg 411,303,458,370,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/121.jpg 602,256,666,347,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/218.jpg 215,328,310,436,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/177.jpg 564,245,628,311,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/105.jpg 428,252,501,330,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/142.jpg 291,268,361,366,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/130.jpg 283,316,350,416,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/229.jpg 440,354,520,445,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/110.jpg 468,436,575,571,0 182,449,268,544,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/103.jpg 424,286,517,375,0 384,283,439,392,0 168,283,240,381,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/81.jpg 590,283,666,385,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/234.jpg 633,430,717,563,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/254.jpg 358,442,430,566,0 423,437,526,565,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/73.jpg 482,280,589,444,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/236.jpg 515,283,599,417,0 584,288,637,387,0 283,289,364,388,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/63.jpg 413,219,476,297,0 563,217,630,301,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/166.jpg 241,230,383,400,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/70.jpg 199,262,281,383,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/124.jpg 615,201,703,345,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/167.jpg 82,156,149,237,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/205.jpg 260,356,339,435,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/259.jpg 563,424,640,530,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/160.jpg 459,346,533,432,0 391,363,442,429,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/217.jpg 19,307,87,402,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/187.jpg 46,353,106,439,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/159.jpg 481,332,591,498,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/246.jpg 585,327,648,452,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/190.jpg 227,289,277,375,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/237.jpg 471,197,561,327,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/211.jpg 602,323,648,389,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/253.jpg 264,344,335,454,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/41.jpg 242,246,297,402,0 299,251,380,408,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/38.jpg 519,301,621,457,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/250.jpg 351,263,425,387,0 654,283,719,411,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/100.jpg 433,372,495,483,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/30.jpg 230,281,444,532,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/137.jpg 211,352,289,439,0 419,347,500,426,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/198.jpg 31,350,101,442,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/240.jpg 61,309,168,438,0 264,381,342,497,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/59.jpg 307,266,397,385,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/134.jpg 95,162,156,244,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/163.jpg 86,311,151,377,0 341,334,404,423,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/117.jpg 430,385,491,495,0 518,394,601,509,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/222.jpg 71,246,148,350,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/76.jpg 615,347,693,475,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/146.jpg 93,161,177,236,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/164.jpg 229,338,361,491,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/194.jpg 435,237,526,377,0 189,281,244,377,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/8.jpg 250,35,497,370,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/168.jpg 283,167,368,243,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/245.jpg 452,382,515,500,0 246,370,331,470,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/181.jpg 388,88,464,203,0 517,108,586,209,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/228.jpg 274,303,356,413,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/102.jpg 494,294,549,376,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/140.jpg 47,327,117,414,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/26.jpg 197,228,505,622,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/249.jpg 601,277,699,463,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/98.jpg 455,262,550,387,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/60.jpg 448,454,580,632,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/143.jpg 264,185,369,246,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/43.jpg 589,450,675,581,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/279.jpg 128,341,224,438,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/66.jpg 473,132,559,263,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/83.jpg 360,442,428,562,0 426,438,511,563,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/39.jpg 636,426,713,542,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/12.jpg 217,318,336,529,0 135,307,224,506,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/42.jpg 397,348,483,479,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/208.jpg 207,352,263,409,0 322,340,377,400,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/63_P.jpg 640,246,708,344,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/97.jpg 475,314,555,430,0 535,305,613,419,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/226.jpg 224,355,279,437,0 265,347,321,438,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/232.jpg 357,430,448,550,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/88.jpg 377,295,463,422,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/148.jpg 261,352,324,436,0 429,338,494,411,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/212.jpg 202,305,266,385,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/27.jpg 144,145,427,487,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/155.jpg 351,337,442,476,0 299,357,366,475,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/64.jpg 193,198,255,299,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/62.jpg 515,277,601,412,0 585,277,644,391,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/192_P.jpg 273,340,313,389,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/188.jpg 290,148,344,215,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/139.jpg 443,354,509,447,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/111.jpg 117,237,201,356,0 163,205,243,301,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/118.jpg 654,279,715,409,0 364,271,427,387,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/238.jpg 595,284,668,404,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/15.jpg 205,200,346,405,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/257.jpg 564,418,629,532,0 601,389,699,534,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/13.jpg 272,188,420,411,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/107.jpg 381,318,452,398,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/149.jpg 382,294,458,377,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/215.jpg 333,349,397,436,0 315,363,343,433,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/145.jpg 412,193,465,283,0 379,203,420,282,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/162.jpg 342,224,470,401,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/86.jpg 152,270,234,394,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/33.jpg 260,159,445,419,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/161.jpg 572,273,660,405,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/150.jpg 197,301,262,385,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/54.jpg 578,426,661,568,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/147.jpg 14,119,79,220,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/189.jpg 300,152,343,221,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/266.jpg 22,326,157,521,0 341,373,473,519,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/75.jpg 59,411,154,542,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/231.jpg 463,428,585,575,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/128.jpg 401,356,481,465,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/255.jpg 481,285,598,435,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/131.jpg 492,224,548,284,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/186_P.jpg 65,316,108,376,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/16.jpg 81,271,334,567,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/7.jpg 120,291,311,555,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/239.jpg 437,384,504,495,0 500,373,566,500,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/125.jpg 615,287,664,376,0 589,309,638,400,0 356,295,419,386,0 333,315,389,390,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/210.jpg 182,201,241,266,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/241.jpg 473,314,552,426,0 570,313,636,417,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/133.jpg 476,163,534,246,0 454,170,491,249,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/90.jpg 358,351,479,477,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/144.jpg 74,318,112,378,0 44,327,79,383,0 140,315,185,368,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/261.jpg 564,408,698,591,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/169.jpg 11,155,67,227,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/68.jpg 21,274,106,380,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/153.jpg 3,366,51,435,0 565,306,613,368,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/271.jpg 332,170,422,285,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/278.jpg 91,306,146,372,0 338,326,407,423,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/224.jpg 200,338,313,444,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/235.jpg 417,424,524,548,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/154.jpg 246,328,340,481,0 208,352,264,485,0 641,385,700,464,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/221.jpg 301,260,364,368,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/203.jpg 159,342,219,407,0 290,344,331,400,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/78.jpg 505,405,603,538,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/252.jpg 552,453,623,568,0 584,427,677,541,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/248.jpg 426,346,497,458,0 470,330,542,445,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/122.jpg 637,214,707,332,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/35.jpg 267,142,443,381,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/223.jpg 203,351,285,440,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/114.jpg 218,258,287,362,0 177,262,226,336,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/69.jpg 648,262,715,373,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/244.jpg 418,427,491,546,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/14.jpg 121,87,421,475,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/55.jpg 474,195,549,327,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/258.jpg 568,229,652,373,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/165.jpg 255,162,394,340,0 604,193,708,330,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/32.jpg 72,144,286,491,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/46.jpg 421,345,497,457,0 470,332,536,434,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/267.jpg 201,379,322,532,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/22.jpg 167,293,489,598,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/96.jpg 525,381,613,515,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/65.jpg 349,288,425,409,0 409,279,482,385,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/77.jpg 442,364,534,495,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/138.jpg 373,356,439,443,0 484,346,556,434,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/72.jpg 517,275,609,414,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/129.jpg 554,228,613,354,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/108.jpg 255,257,326,365,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/94.jpg 297,269,378,381,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/120.jpg 226,280,327,410,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/158.jpg 287,82,416,285,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/10.jpg 165,293,248,442,0 130,341,200,488,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/17.jpg 301,315,339,374,0 274,321,309,376,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/243.jpg 295,418,367,493,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/115.jpg 392,434,480,563,0 303,419,398,554,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/242.jpg 477,311,554,424,0 545,309,619,428,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/201.jpg 271,149,317,222,0 222,162,285,224,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/5.jpg 141,348,187,478,0 154,297,262,439,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/256.jpg 474,275,560,430,0 550,294,640,446,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/52.jpg 525,270,597,412,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/193.jpg 177,199,221,256,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/264.jpg 303,8,502,218,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/6.jpg 319,135,564,470,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/85.jpg 356,423,452,552,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/99.jpg 177,288,267,403,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/136.jpg 7,153,70,239,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/172.jpg 394,201,461,285,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/141.jpg 28,356,97,440,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/156.jpg 233,297,355,475,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/225.jpg 2,359,64,434,0 545,319,599,372,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/74.jpg 526,403,607,555,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/275.jpg 272,63,411,297,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/227.jpg 426,352,487,409,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/57.jpg 23,164,107,293,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/119.jpg 254,166,329,271,0
-/home/user/PROJECT/ljd/Det/detector/yolo3/FaceinCar2/JPEGImages/113.jpg 421,434,515,579,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/179.jpg 344,295,403,377,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/276.jpg 89,130,221,377,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/151.jpg 266,313,328,411,0 228,328,270,406,0 421,313,475,394,0 468,322,524,393,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/53.jpg 327,259,398,351,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/157.jpg 84,99,219,332,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/36.jpg 405,199,542,385,0 544,167,685,390,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/47.jpg 525,362,605,487,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/176.jpg 411,303,458,370,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/121.jpg 602,256,666,347,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/218.jpg 215,328,310,436,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/177.jpg 564,245,628,311,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/105.jpg 428,252,501,330,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/142.jpg 291,268,361,366,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/130.jpg 283,316,350,416,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/229.jpg 440,354,520,445,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/110.jpg 468,436,575,571,0 182,449,268,544,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/103.jpg 424,286,517,375,0 384,283,439,392,0 168,283,240,381,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/81.jpg 590,283,666,385,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/234.jpg 633,430,717,563,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/254.jpg 358,442,430,566,0 423,437,526,565,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/73.jpg 482,280,589,444,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/236.jpg 515,283,599,417,0 584,288,637,387,0 283,289,364,388,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/63.jpg 413,219,476,297,0 563,217,630,301,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/166.jpg 241,230,383,400,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/70.jpg 199,262,281,383,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/124.jpg 615,201,703,345,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/167.jpg 82,156,149,237,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/205.jpg 260,356,339,435,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/259.jpg 563,424,640,530,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/160.jpg 459,346,533,432,0 391,363,442,429,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/217.jpg 19,307,87,402,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/187.jpg 46,353,106,439,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/159.jpg 481,332,591,498,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/246.jpg 585,327,648,452,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/190.jpg 227,289,277,375,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/237.jpg 471,197,561,327,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/211.jpg 602,323,648,389,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/253.jpg 264,344,335,454,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/41.jpg 242,246,297,402,0 299,251,380,408,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/38.jpg 519,301,621,457,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/250.jpg 351,263,425,387,0 654,283,719,411,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/100.jpg 433,372,495,483,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/30.jpg 230,281,444,532,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/137.jpg 211,352,289,439,0 419,347,500,426,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/198.jpg 31,350,101,442,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/240.jpg 61,309,168,438,0 264,381,342,497,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/59.jpg 307,266,397,385,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/134.jpg 95,162,156,244,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/163.jpg 86,311,151,377,0 341,334,404,423,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/117.jpg 430,385,491,495,0 518,394,601,509,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/222.jpg 71,246,148,350,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/76.jpg 615,347,693,475,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/146.jpg 93,161,177,236,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/164.jpg 229,338,361,491,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/194.jpg 435,237,526,377,0 189,281,244,377,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/8.jpg 250,35,497,370,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/168.jpg 283,167,368,243,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/245.jpg 452,382,515,500,0 246,370,331,470,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/181.jpg 388,88,464,203,0 517,108,586,209,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/228.jpg 274,303,356,413,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/102.jpg 494,294,549,376,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/140.jpg 47,327,117,414,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/26.jpg 197,228,505,622,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/249.jpg 601,277,699,463,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/98.jpg 455,262,550,387,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/60.jpg 448,454,580,632,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/143.jpg 264,185,369,246,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/43.jpg 589,450,675,581,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/279.jpg 128,341,224,438,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/66.jpg 473,132,559,263,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/83.jpg 360,442,428,562,0 426,438,511,563,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/39.jpg 636,426,713,542,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/12.jpg 217,318,336,529,0 135,307,224,506,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/42.jpg 397,348,483,479,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/208.jpg 207,352,263,409,0 322,340,377,400,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/63_P.jpg 640,246,708,344,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/97.jpg 475,314,555,430,0 535,305,613,419,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/226.jpg 224,355,279,437,0 265,347,321,438,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/232.jpg 357,430,448,550,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/88.jpg 377,295,463,422,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/148.jpg 261,352,324,436,0 429,338,494,411,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/212.jpg 202,305,266,385,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/27.jpg 144,145,427,487,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/155.jpg 351,337,442,476,0 299,357,366,475,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/64.jpg 193,198,255,299,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/62.jpg 515,277,601,412,0 585,277,644,391,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/192_P.jpg 273,340,313,389,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/188.jpg 290,148,344,215,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/139.jpg 443,354,509,447,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/111.jpg 117,237,201,356,0 163,205,243,301,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/118.jpg 654,279,715,409,0 364,271,427,387,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/238.jpg 595,284,668,404,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/15.jpg 205,200,346,405,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/257.jpg 564,418,629,532,0 601,389,699,534,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/13.jpg 272,188,420,411,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/107.jpg 381,318,452,398,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/149.jpg 382,294,458,377,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/215.jpg 333,349,397,436,0 315,363,343,433,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/145.jpg 412,193,465,283,0 379,203,420,282,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/162.jpg 342,224,470,401,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/86.jpg 152,270,234,394,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/33.jpg 260,159,445,419,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/161.jpg 572,273,660,405,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/150.jpg 197,301,262,385,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/54.jpg 578,426,661,568,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/147.jpg 14,119,79,220,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/189.jpg 300,152,343,221,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/266.jpg 22,326,157,521,0 341,373,473,519,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/75.jpg 59,411,154,542,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/231.jpg 463,428,585,575,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/128.jpg 401,356,481,465,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/255.jpg 481,285,598,435,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/131.jpg 492,224,548,284,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/186_P.jpg 65,316,108,376,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/16.jpg 81,271,334,567,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/7.jpg 120,291,311,555,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/239.jpg 437,384,504,495,0 500,373,566,500,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/125.jpg 615,287,664,376,0 589,309,638,400,0 356,295,419,386,0 333,315,389,390,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/210.jpg 182,201,241,266,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/241.jpg 473,314,552,426,0 570,313,636,417,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/133.jpg 476,163,534,246,0 454,170,491,249,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/90.jpg 358,351,479,477,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/144.jpg 74,318,112,378,0 44,327,79,383,0 140,315,185,368,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/261.jpg 564,408,698,591,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/169.jpg 11,155,67,227,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/68.jpg 21,274,106,380,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/153.jpg 3,366,51,435,0 565,306,613,368,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/271.jpg 332,170,422,285,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/278.jpg 91,306,146,372,0 338,326,407,423,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/224.jpg 200,338,313,444,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/235.jpg 417,424,524,548,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/154.jpg 246,328,340,481,0 208,352,264,485,0 641,385,700,464,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/221.jpg 301,260,364,368,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/203.jpg 159,342,219,407,0 290,344,331,400,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/78.jpg 505,405,603,538,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/252.jpg 552,453,623,568,0 584,427,677,541,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/248.jpg 426,346,497,458,0 470,330,542,445,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/122.jpg 637,214,707,332,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/35.jpg 267,142,443,381,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/223.jpg 203,351,285,440,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/114.jpg 218,258,287,362,0 177,262,226,336,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/69.jpg 648,262,715,373,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/244.jpg 418,427,491,546,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/14.jpg 121,87,421,475,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/55.jpg 474,195,549,327,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/258.jpg 568,229,652,373,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/165.jpg 255,162,394,340,0 604,193,708,330,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/32.jpg 72,144,286,491,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/46.jpg 421,345,497,457,0 470,332,536,434,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/267.jpg 201,379,322,532,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/22.jpg 167,293,489,598,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/96.jpg 525,381,613,515,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/65.jpg 349,288,425,409,0 409,279,482,385,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/77.jpg 442,364,534,495,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/138.jpg 373,356,439,443,0 484,346,556,434,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/72.jpg 517,275,609,414,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/129.jpg 554,228,613,354,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/108.jpg 255,257,326,365,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/94.jpg 297,269,378,381,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/120.jpg 226,280,327,410,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/158.jpg 287,82,416,285,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/10.jpg 165,293,248,442,0 130,341,200,488,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/17.jpg 301,315,339,374,0 274,321,309,376,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/243.jpg 295,418,367,493,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/115.jpg 392,434,480,563,0 303,419,398,554,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/242.jpg 477,311,554,424,0 545,309,619,428,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/201.jpg 271,149,317,222,0 222,162,285,224,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/5.jpg 141,348,187,478,0 154,297,262,439,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/256.jpg 474,275,560,430,0 550,294,640,446,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/52.jpg 525,270,597,412,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/193.jpg 177,199,221,256,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/264.jpg 303,8,502,218,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/6.jpg 319,135,564,470,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/85.jpg 356,423,452,552,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/99.jpg 177,288,267,403,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/136.jpg 7,153,70,239,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/172.jpg 394,201,461,285,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/141.jpg 28,356,97,440,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/156.jpg 233,297,355,475,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/225.jpg 2,359,64,434,0 545,319,599,372,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/74.jpg 526,403,607,555,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/275.jpg 272,63,411,297,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/227.jpg 426,352,487,409,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/57.jpg 23,164,107,293,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/119.jpg 254,166,329,271,0
+/home/user/PROJECT/ljd/github/Det/detector/yolov3/FaceinCar2/JPEGImages/113.jpg 421,434,515,579,0
