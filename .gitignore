@@ -3,3 +3,13 @@ build/
 *.h5
 *.weights
 *.74
+
+detector/faster_rcnn/experiments/output
+detector/faster_rcnn/experiments/data
+detector/faster_rcnn/experiments/model
+detector/faster_rcnn/experiments/logs
+
+detector/yolov3/yolo3/logs
+detector/yolov3/yolo3/model/*.h5
+detector/yolov3/yolo3/model/*.weights
+
