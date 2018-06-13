@@ -6,6 +6,8 @@ from PIL import Image
 import numpy as np
 from matplotlib.colors import rgb_to_hsv, hsv_to_rgb
 
+
+
 def compose(*funcs):
     """Compose arbitrarily many functions, evaluated left to right.
 
@@ -115,3 +117,5 @@ def get_random_data(annotation_line, input_shape, random=True, max_boxes=20, jit
     box_data[:len(box)] = box
 
     return image_data, box_data
+
+

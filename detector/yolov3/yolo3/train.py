@@ -2,8 +2,11 @@
 Retrain the YOLOv3 model for your own dataset.
 """
 
+import os
 import numpy as np
-import keras.backend as K
+import tensorflow as tf
+
+from keras.backend import tensorflow_backend as K
 from keras.layers import Input, Lambda
 from keras.models import Model
 from keras.optimizers import Adam
@@ -12,39 +15,42 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 from yolo3.utils import get_random_data
 
 
-
 class Train(object):
-    def __init__(self, yolo, 
-                       annotation_path,
-                       classes_path,
-                       anchors_path,
-                       weights_path,
-                       log_dir='./yolo3/logs'):
-        self.annotation_path = annotation_path
-        self.classes_path = classes_path
-        self.anchors_path = anchors_path
-        self.weights_path = weights_path
-        self.log_dir = log_dir
+    def __init__(self, yolo, **cfgs):
+        self.cfgs = cfgs
+        self.annotation_path = self.cfgs['annotation_path']
+        self.classes_path = self.cfgs['classes_path']
+        self.anchors_path = self.cfgs['anchors_path']
+        self.weights_path = self.cfgs['weights_path']
+        self.model_train_dir = self.cfgs['model_train_dir']
+        self.log_dir = self.cfgs['log_dir']
 
         self.class_names = self.get_classes()
         self.num_classes = len(self.class_names)
         self.anchors = self.get_anchors()
         self.annotations = self.get_annotations()
         
-        self.input_shape = (416,416) # multiple of 32, hw
-        self.batch_size = 16
-        self.val_split = 0.1
+        self.lr = self.cfgs['lr']
+        self.input_shape = self.cfgs['input_shape'] # multiple of 32, hw
+        self.batch_size = self.cfgs['batch_size']
+        self.val_split = self.cfgs['val_split']
+
         self.num_val = int(len(self.annotations)*self.val_split)
         self.num_train = len(self.annotations) - self.num_val
         print('Train on {} samples, val on {} samples, with batch size {}.'.format(self.num_train, self.num_val, self.batch_size))
-
+       
+        # GPU
+        config = tf.ConfigProto(log_device_placement=False)
+        config.gpu_options.per_process_gpu_memory_fraction = 0.9
+        K.set_session(tf.Session(config=config))
+        
         self.model = yolo.create_model(self.input_shape,
                                         self.class_names,
                                         self.anchors,
                                         self.weights_path,
-                                        load_pretrained=True,
-                                        freeze_body=True)
-   
+                                        load_pretrained=self.cfgs['load_pretrained'],
+                                        freeze_body=self.cfgs['freeze_body'])
+        
     def get_classes(self):
         '''loads the classes'''
         with open(self.classes_path) as f:
@@ -64,6 +70,8 @@ class Train(object):
             lines = f.readlines()
         np.random.shuffle(lines)
         return lines
+
+
 
     def preprocess_true_boxes(self,true_boxes, input_shape, anchors, num_classes):
         '''Preprocess true boxes to training input format
@@ -161,37 +169,55 @@ class Train(object):
         return self.data_generator(annotation_lines)
 
 
-    
+
+
+
     def train(self):
         """retrain/fine-tune the model"""
 
-        adam = Adam(lr=0.001)
+        adam = Adam(lr=self.lr)
         self.model.compile(optimizer=adam,loss={'yolo_loss': lambda y_true, y_pred: y_pred})
 
         logging = TensorBoard(log_dir=self.log_dir)
 
-        checkpoint = ModelCheckpoint(self.log_dir + "ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5",
+        checkpoint = ModelCheckpoint(os.path.join(self.model_train_dir+"ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5"),
                                      monitor='val_loss', 
                                      save_weights_only=True,
                                      save_best_only=True,
-                                     period=500)
-
+                                     period=self.cfgs['ckpt_period'])
+        '''
         early_stopping = EarlyStopping(monitor='val_loss',
                                        min_delta=0, 
                                        patience=5, 
                                        verbose=1, 
                                        mode='auto')
-
+        '''
 
         self.model.fit_generator(self.data_generator_wrap(self.annotations[:self.num_train]),
                                  steps_per_epoch=max(1, self.num_train//self.batch_size),
                                  validation_data=self.data_generator_wrap(self.annotations[self.num_train:]),
                                  validation_steps=max(1, self.num_val//self.batch_size),
-                                 epochs=1000,
-                                 initial_epoch=0,
+                                 epochs=self.cfgs['epochs'],
+                                 initial_epoch=self.cfgs['initial_epoch'],
                                  callbacks=[logging, checkpoint])
 
-        self.model.save_weights(self.log_dir + 'yolo_weights.h5')
+        self.model.save_weights(os.path.join(self.model_train_dir, self.cfgs['final_weights']))
 
+
+
+
+from yolo3.model import Yolo, YoloTiny
+
+def train_yolo(**cfgs):
+    """ train yolo"""
+    yolo = Yolo()
+    tr = Train(yolo, **cfgs)
+    tr.train()
+
+def train_tiny_yolo(**cfgs):
+    """ train tiny yolo"""
+    yolo = YoloTiny()
+    tr = Train(yolo, **cfgs)
+    tr.train()
 
 

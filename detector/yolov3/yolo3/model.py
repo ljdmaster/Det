@@ -1,10 +1,14 @@
 """YOLO_v3 Model Defined in Keras."""
 
+import sys
+sys.path.append("../")
+
 from functools import wraps
 
 import numpy as np
 import tensorflow as tf
-from keras import backend as K
+
+from keras.backend import tensorflow_backend as K
 from keras.layers import Conv2D, Add, ZeroPadding2D, UpSampling2D, Concatenate, MaxPooling2D
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.normalization import BatchNormalization
@@ -106,9 +110,12 @@ def box_iou(b1, b2):
     intersect_area = intersect_wh[..., 0] * intersect_wh[..., 1]
     b1_area = b1_wh[..., 0] * b1_wh[..., 1]
     b2_area = b2_wh[..., 0] * b2_wh[..., 1]
+    
     iou = intersect_area / (b1_area + b2_area - intersect_area)
 
     return iou
+
+
 
 
 
@@ -143,8 +150,10 @@ class Base(object):
             return grid, feats, box_xy, box_wh
         return box_xy, box_wh, box_confidence, box_class_probs
     
+
     def yolo_body(self):
         pass
+
 
     def yolo_loss(self, args, anchors, num_classes, ignore_thresh=.5, print_loss=False):
         '''Return yolo_loss tensor
@@ -164,8 +173,10 @@ class Base(object):
         '''
 
         num_layers = len(anchors)//3 # default setting
+
         yolo_outputs = args[:num_layers]
         y_true = args[num_layers:]
+        
         anchor_mask = [[6,7,8], [3,4,5], [0,1,2]] if num_layers==3 else [[3,4,5], [1,2,3]]
         input_shape = K.cast(K.shape(yolo_outputs[0])[1:3] * 32, K.dtype(y_true[0]))
         grid_shapes = [K.cast(K.shape(yolo_outputs[l])[1:3], K.dtype(y_true[0])) for l in range(num_layers)]
@@ -242,6 +253,7 @@ class Base(object):
     
 
         arguments={'anchors': anchors, 'num_classes': num_classes, 'ignore_thresh': 0.5}
+        
         model_loss = Lambda(self.yolo_loss, output_shape=(1,), name='yolo_loss',arguments=arguments)([*model_body.output, *y_true])
         model = Model([model_body.input, *y_true], model_loss)
 
@@ -331,6 +343,10 @@ class Base(object):
         return boxes_, scores_, classes_
 
 
+
+
+
+
 class Yolo(Base):
     def __init__(self):
         super(Yolo, self).__init__()
@@ -389,4 +405,10 @@ class YoloTiny(Base):
         return Model(inputs, [y1,y2])
 
 
+if __name__=="__main__":
+
+    box1 = K.constant([10,10, 100,100])
+    box2 = K.constant([100,100, 100, 100])
+    sess = K.get_session()
+    print(sess.run(box_iou(box1, box2)))
 
